@@ -1,3 +1,6 @@
+import UserHandler from "./modules/userHandler.js";
+
+const userHandler = new UserHandler();
 
 class Main {
 
@@ -49,6 +52,10 @@ class Main {
 
     async start() {
         if (location.hash === "") location.hash = "/login";
+        const users = userHandler.getUsers();
+        if (userHandler.getUsersFromLocalStorage() === null) {
+            userHandler.setUsersToLocalStorage(users);
+        }
 
         await this.loadTemplates();
     }
