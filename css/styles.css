@@ -1,0 +1,98 @@
+:root {
+    --title-color: #444;
+    --primary-text-color: #ccc;
+    --btn-color: #8DBF91;
+    --btn-color-hover: #729d74;
+    --error-color: rgb(226, 70, 70);
+    --success-color: rgb(94, 204, 94);
+}
+
+.login-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-image {
+    width: 250px;
+    object-fit: cover;
+}
+
+h4 {
+    color: var(--title-color);
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--primary-text-color);
+    outline: none;
+}
+
+.btn-submit {
+    background-color: var(--btn-color);
+    color: #FFF;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    height: 3em;
+}
+
+.btn-submit:hover {
+    background-color: var(--btn-color-hover);
+}
+
+.line-separator {
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary-text-color);
+    margin: 1em 0;
+}
+
+.login-alternative-container {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-alternative-container button {
+    margin: 0 1em;
+    background-color: transparent;
+    box-shadow: 1px 1px 1px 1px var(--primary-text-color);
+    border: none;
+    cursor: pointer;
+    min-width: 3em;
+    height: 3em;
+    font-size: 2em;
+}
+
+.login-alternative-container button:nth-child(1) {
+    color: #EA4335;
+}
+
+.login-alternative-container button:nth-child(2) {
+    color: #1877F2;
+}
+
+
+.error-login-button {
+    background-color: var(--error-color);
+}
+
+.error-login-button:hover {
+    background-color: var(--error-color);
+}
+
+.error {
+    border: 1px solid var(--error-color) !important;
+}
+
+.valid {
+    border: 1px solid var(--success-color) !important;
+}
+
+span {
+    color: var(--error-color);
+}
