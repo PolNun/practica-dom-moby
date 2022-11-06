@@ -1,0 +1,68 @@
+<div class="row">
+    <div class="offset-md-2 col-md-8">
+        <div class="p-5">
+            <picture class="login-image-container">
+                <img src="img/gboard-turtle-fruit.png" alt="Gboard turtle" title="G-board turtle" class="login-image">
+            </picture>
+            <div class="p-5">
+                <h4 class="card-title">Registrate</h4>
+                <span id="error"></span>
+                <form id="registration-form">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="register-name"></label>
+                            <input type="text" id="register-name" placeholder="Nombre" required>
+                            <span class="form-text text-danger" id="error-name"></span>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="register-lastname"></label>
+                            <input type="text" id="register-lastname" placeholder="Apellido" required>
+                            <span class="form-text text-danger" id="error-lastname"></span>
+                        </div>
+                        <div class="">
+                            <label for="register-email" class="form-label"></label>
+                            <input type="email" placeholder="Correo electrónico" id="register-email" required>
+                            <span class="form-text text-danger" id="error-email"></span>
+                        </div>
+                        <div class="">
+                            <label for="register-email-confirmation" class="form-label"></label>
+                            <input type="email" id="register-email-confirmation" placeholder="Repetir el correo electrónico"
+                                required>
+                            <span class="form-text text-danger" id="error-email-confirmation"></span>
+                        </div>
+                        <div class=" col-12 col-md-6">
+                            <label for="register-password" class="form-label"></label>
+                            <input type="password" id="register-password" placeholder="Contraseña" required>
+                            <span class="form-text text-danger" id="error-password"></span>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6">
+                            <label for="register-password-confirmation" class="form-label"></label>
+                            <input type="password" id="register-password-confirmation" placeholder="Repetir contraseña"
+                                required>
+                            <span class="form-text text-danger" id="error-password-confirmation"></span>
+                        </div>
+                        <p class="form-text" id="password-note">
+                            La contraseña debe tener un mínimo de 8 caracteres alfanuméricos
+                        </p>
+                        <div>
+                            <button id="register-button" type="submit" class="fw-semibold btn-submit">
+                                Crear cuenta
+                            </button>
+                        </div>
+                        <div class="form-text text-center mt-3">
+                            ¿Ya tenés una cuenta?
+                            <a id="login-link" href="#/login"
+                                class="form-text text-decoration-none fw-semibold">Ingresá</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="mt-3 line-separator"></div>
+                <div class="login-alternative-container mt-5">
+                    <button type="submit"><i class="fa-brands fa-google"></i></button>
+                    <button type="submit"><i class="fa-brands fa-facebook-f"></i></button>
+                </div>
+                <p class="form-text text-center mt-4">Registrate con Google o Facebook</p>
+            </div>
+        </div>
+    </div>
+</div>
